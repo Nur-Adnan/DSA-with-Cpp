@@ -3,7 +3,9 @@
 using namespace std;
 int main(){
     cout << "Hello World" << endl;
+    // cout is for printing out.
     return 0;
+    // return 0, is for successful execution
 }
 
 /*
