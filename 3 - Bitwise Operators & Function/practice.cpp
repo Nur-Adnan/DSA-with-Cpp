@@ -29,6 +29,11 @@ int main(){
     cout << (25 << 1) << endl;
     // that means here 2 to the power 2
     cout << (25 << 2) << endl;
+    // right shift
+    // here, it's divided with 2^n
+    // that means -1000 / 2^n
+    cout << ((-1000) >> 1) << endl;
+
 
     return 0;
 }
