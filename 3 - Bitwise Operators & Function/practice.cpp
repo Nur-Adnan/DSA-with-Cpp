@@ -33,7 +33,18 @@ int main(){
     // here, it's divided with 2^n
     // that means -1000 / 2^n
     cout << ((-1000) >> 1) << endl;
-
+    /* 
+        bitwise even odd condtion's, if use &
+        after the last bit 0 then it's even and if 
+        the last bit 1 then it's odd.
+    */
+    // let's check
+    int n = 11;
+    if( (n & 1) == 0){
+        cout << "Even" << endl;
+    }else{
+        cout << "Odd" << endl;
+    }
 
     return 0;
 }
