@@ -54,6 +54,21 @@ int main(){
     }else{
         cout << "Even Number";
     }
+    cout << endl;
+
+    // set bit -> Like 5 - 00000101 - here all the 1's are set bit
+
+    int number = 4;
+    int setBitCount  = 0;
+    while(number != 0){
+        int lastBit = (number & 1);
+        if(lastBit == 1){
+            setBitCount = setBitCount + 1;
+        }
+        //right shift
+        number = number >> 1;
+    }
+    cout << "Total Set Bits : " << setBitCount << endl;
 
     return 0;
 }
