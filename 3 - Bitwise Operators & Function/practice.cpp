@@ -39,11 +39,20 @@ int main(){
         the last bit 1 then it's odd.
     */
     // let's check
+    /*
     int n = 11;
     if( (n & 1) == 0){
         cout << "Even" << endl;
     }else{
         cout << "Odd" << endl;
+    }
+    */
+    //normally people use it like that way
+    int n = 10;
+    if(n & 1){
+        cout << "Odd Number";
+    }else{
+        cout << "Even Number";
     }
 
     return 0;
