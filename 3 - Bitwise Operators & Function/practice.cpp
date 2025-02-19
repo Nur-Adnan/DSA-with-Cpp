@@ -22,5 +22,9 @@ int main(){
     // 0 0 0 0 0 1 1 0 -> 1 + 1 = 2 that's binary form 0010
     // -6
     cout << ~(5) << endl;
+    cout << (5^5) << endl;
+
+
+
     return 0;
 }
