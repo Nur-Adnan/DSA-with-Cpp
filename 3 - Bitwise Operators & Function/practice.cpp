@@ -1,5 +1,30 @@
 #include <iostream>
 using namespace std;
+
+void printTwoTable(int n){
+    for(int i = 1; i <= 10; i++){
+        cout << n * i << endl;
+    }
+}
+
+int calculatePower(int a, int b){
+    int ans = 1;
+    for(int i = 1; i <= b; i++){
+        // 1 * 5
+        // 5 * 5
+        ans = ans * a;
+    }
+    return ans;
+}
+
+
+int calculateTotalSum (int a, int l, int n){
+    int ans = ((n)*(a+l))/2;
+    return ans;
+}
+
+
+
 int main(){
     // 0 0 0 0 0 1 0 1 -> 5
     // 0 0 0 0 0 0 1 1 -> 3
@@ -69,6 +94,14 @@ int main(){
         number = number >> 1;
     }
     cout << "Total Set Bits : " << setBitCount << endl;
+
+    printTwoTable(5);
+    int finalAns = calculatePower(5, 2);
+    cout << finalAns << endl;
+
+
+    int calCulateSum = calculateTotalSum(2, 10, 5);
+    cout << calCulateSum << endl;
 
     return 0;
 }
