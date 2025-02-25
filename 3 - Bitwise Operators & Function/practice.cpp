@@ -23,6 +23,17 @@ int calculateTotalSum (int a, int l, int n){
     return ans;
 }
 
+bool isPrime(int number){
+    for(int i = 2; i <= number - 1; i++){
+        if(number % 2 == 0){
+            return false;
+        }
+    }
+    return true;
+}
+
+
+
 
 
 int main(){
@@ -99,9 +110,16 @@ int main(){
     int finalAns = calculatePower(5, 2);
     cout << finalAns << endl;
 
-
     int calCulateSum = calculateTotalSum(2, 10, 5);
     cout << calCulateSum << endl;
+
+    bool primeAns = isPrime(11);
+    if(primeAns == true){
+        cout << "Prime" << endl;
+    }else{
+        cout << "Not Prime" << endl;
+    }
+
 
     return 0;
 }
