@@ -44,6 +44,15 @@ void printEvenInsideRange(int start, int end){
 }
 
 
+float calculatePercentage(int sb1, int sb2, int sb3, int sb4, int sb5){
+    int sum = sb1 + sb2 + sb3 + sb4 + sb5;
+    int totalMarks = 500;
+
+    float percentage = (sum * 100.0) / totalMarks;
+    return percentage;
+}
+
+
 
 int main(){
 
@@ -130,7 +139,9 @@ int main(){
     }else{
         cout << "Not Prime" << endl;
     }
-    printEvenAndOddInsideRange(101, 123);
+    printEvenInsideRange(101, 123);
+
+    cout << "Total: " << calculatePercentage(95, 95, 95, 99, 88) << endl;
 
     return 0;
 }
