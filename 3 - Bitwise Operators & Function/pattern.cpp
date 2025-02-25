@@ -9,7 +9,6 @@ using namespace std;
 
 */
 
-
 /*
     pass by value and pass by referance
     pass by value = copy
@@ -28,4 +27,10 @@ int main(){
         }
         cout << endl;
     }
+
+    int age = 15;
+    int &demo = age;
+    age++;
+    cout << "Demo: " << demo << endl;
+    cout << "Age: " <<age << endl;
 }
