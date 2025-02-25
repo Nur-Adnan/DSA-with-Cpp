@@ -25,7 +25,7 @@ int calculateTotalSum (int a, int l, int n){
 
 bool isPrime(int number){
     for(int i = 2; i <= number - 1; i++){
-        if(number % 2 == 0){
+        if(number % i == 0){
             return false;
         }
     }
