@@ -32,11 +32,22 @@ bool isPrime(int number){
     return true;
 }
 
-
+void printEvenInsideRange(int start, int end){
+    for(int i = start; i <= end; i++){
+        int n = i;
+        // n & 1 = odd
+        // !(n & 1) = even
+        if(!(n & 1)){
+            cout << n << endl;
+        }
+    }
+}
 
 
 
 int main(){
+
+
     // 0 0 0 0 0 1 0 1 -> 5
     // 0 0 0 0 0 0 1 1 -> 3
     // --------------------
@@ -119,7 +130,7 @@ int main(){
     }else{
         cout << "Not Prime" << endl;
     }
-
+    printEvenAndOddInsideRange(101, 123);
 
     return 0;
 }
